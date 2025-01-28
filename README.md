@@ -1,115 +1,81 @@
-**Consumer Complaints Data Analysis**
-This repository contains a detailed analysis of consumer complaints data using Excel. The project focuses on data cleaning, combining datasets, working with dates, and generating insightful reports and dashboards to help understand the customer complaints landscape, resolution process, and reporting at various levels (e.g., company, product, etc.).
+# Customer Complaint Insights Dashboard
 
-**Project Overview**
-The analysis uses consumer complaints data, which includes details such as state codes, complaint issues, resolution times, and company information. The project covers the following key areas:
+## 📊 Business Context
+This project was developed to assist **regulatory agencies** in improving customer experience by providing insights into bank customer complaints. The goal was to identify key trends and areas for improvement in the handling of customer complaints, ultimately helping to enhance customer service practices.
 
-Data Preparation: cleaning datasets, extracting relevant details.
+---
 
-Reporting: Generating summary reports at both company and issue levels.
+## 🔑 Summary
 
-Dashboard Creation: Visualizing the complaint data to uncover key insights.
+The project involved analyzing **bank customer complaint data** and generating actionable insights to help regulatory agencies understand patterns in complaints, response times, and resolution effectiveness. Key achievements include:
 
-Key Objectives:
-Understand complaint trends over time and across different companies and products.
-Analyze the timeliness and effectiveness of complaint resolutions.
-Create actionable insights for customer support teams to prioritize complaints.
+- **Exploratory Data Analysis (EDA):** 
+  - Conducted a comprehensive analysis of key metrics such as **complaint volume**, **response times**, and **resolution efficiency** to uncover trends and patterns.
+  
+- **Interactive Dashboard:** 
+  - Built an intuitive and interactive dashboard to monitor:
+    - Complaint categories
+    - Complaint channels (e.g., phone, email, online)
+    - Regional trends and comparisons.
+  
+- **Key Insights:** 
+  - Provided actionable insights to regulatory bodies, aiding in decision-making processes for improving the customer complaint resolution process.
 
-Tasks Breakdown
-**Task 1: Data Preparation and Combining Datasets**
-Create Columns:
+---
 
-Add STATE and CODE columns to the State_Code_Name worksheet.
-Extract and transform data from JSON format into a tabular structure using Excel functions like VLOOKUP.
-Data Mapping:
+## 🛠 Tools and Techniques
+- **Tools:** 
+  - **Excel** (used for data analysis and dashboard creation)
+  
+- **Techniques:** 
+  - **Exploratory Data Analysis (EDA)**
+  - **Data Cleaning**
+  - **Dashboard Design**
+  - **Insight Generation**
 
-Create a State_Name column in the Consumer_Complaints worksheet.
-Map State_Code to State_Name using data from the State_Code_Name worksheet.
-Count Missing Data:
+---
 
-Calculate the number of records with missing state names (i.e., #N/A values).
-Create a summary table highlighting complaints with unmapped state names.
-Analyze the causes of missing state data.
+## 🚀 Project Highlights
 
-**Task 2: Working with Dates**
-Calculate Resolution Time:
+- **Complaint Volume Analysis:** 
+  - Identified patterns in complaint volume across different periods, regions, and channels.
+  
+- **Response Time Analysis:** 
+  - Evaluated average response times to highlight areas for process improvement.
+  
+- **Resolution Efficiency:** 
+  - Measured resolution rates across various complaint categories to spot inefficiencies.
 
-Determine the resolution time (in days) for each complaint based on the complaint and resolution dates.
-Year and Quarter Columns:
 
-Add a YEAR column to extract the year from the complaint received date.
-Add a QTR column to determine the fiscal quarter (Q1, Q2, Q3, Q4) based on the complaint date.
-Data Cleaning:
+---
 
-Ensure that all date columns are in a valid format (e.g., mm/dd/yyyy or dd-mm-yyyy).
+## 📥 Installation & Usage
 
-**Task 3: Reporting at Company Level**
-Company-wise Complaints:
+Since this project uses **Excel** as the primary tool for data analysis and dashboard creation, follow these steps to explore the work:
 
-Summarize the total number of complaints for each company.
-Timely Response:
+1. **Download the project files** from this repository.
+2. **Open the Excel workbook** that contains the data and dashboard.
+3. Review the different **sheets** for data analysis, including the visualizations in the dashboard.
+4. Use the **filters** and **slicers** in the dashboard to explore specific complaint categories, regions, or timeframes.
 
-Calculate the number and percentage of complaints that did not receive a timely response.
-Disputed Complaints:
+---
 
-Calculate the number and percentage of complaints marked as disputed.
-Average Delay:
+## ✅ Conclusion
 
-Calculate the average delay (in days) in resolving complaints.
+This project empowers **regulatory agencies** with actionable insights that can directly contribute to improving customer experience by optimizing the way complaints are handled. The interactive dashboard and data analysis help monitor trends and improve complaint resolution processes over time.
 
-**Task 4: Reporting and Visualization**
+---
 
-Top 5 Companies with Complaints:
+Feel free to clone or download this repository to explore further. If you have any questions or suggestions, please open an **issue** or submit a **pull request**!
 
-Identify and display the top five companies with the highest number of complaints.
-Top 5 Complaint Issues:
+---
 
-Identify and display the top five issues leading to complaints.
-Monthly Trends:
+## 🤝 Contributing
 
-Create a line/area chart to visualize the trend of complaints over time on a monthly basis.
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. All contributions are welcome!
 
-**Task 5: Dashboard Creation**
+---
 
-Key Performance Indicators (KPIs):
+## 📄 License
 
-Display KPIs such as total complaints, timely responses, and average resolution time, including Year-over-Year (YoY) comparisons.
-Proportions by Product and Channel:
-
-Show the breakdown of complaints by product type and the channel through which the complaint was filed.
-Priority Complaints:
-
-Visually highlight complaints that need to be prioritized based on urgency and other factors.
-Monthly Trends:
-
-Display a line/area chart showing the monthly trend of complaints over time.
-
-**1. Data Files**
-All data for analysis is stored in the Consumer_Complaints and State_Code_Name worksheets. Ensure the data is properly formatted before proceeding with the analysis.
-
-**2. Analysis Steps**
-Follow the task breakdown outlined above to perform data preparation, analysis, and reporting. Key Excel features used include:
-
-Pivot Tables
-VLOOKUP
-COUNTIF
-Charts
-IFS
-**3. Report Creation**
-After completing the analysis, use Excel to create reports for each task, such as company-wise summaries and issue-wise complaints. Add relevant charts and summaries as necessary.
-
-**4. Dashboard Creation**
-Create a new worksheet called Report_Task5 to build the dashboard and display KPIs, trends, and other visual insights.
-
-Tools Used
-Excel: For data cleaning, analysis, pivot tables, charts, and dashboards.
-Excel Formulas:
-VLOOKUP, COUNTIF, DATEDIF, YEAR, MONTH, etc.
-Data transformations and calculations.
-Inferences
-The analysis helps to identify key trends and KPIs such as the average resolution time and the proportion of timely responses across different companies.
-Insights from the analysis assist customer support teams in prioritizing complaints and improving overall response times.
-The dashboard offers a comprehensive view of complaint trends, product performance, and response effectiveness.
-Acknowledgements
-The data for this project was sourced from publicly available datasets.
-Special thanks to contributors and the open-source community for the tools used in data cleaning and analysis.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
